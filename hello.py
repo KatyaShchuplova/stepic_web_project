@@ -1,4 +1,4 @@
-def wsgi_application(environ, start_response):
+def application(environ, start_response):
     string = str(environ["QUERY_STRING"])
     body = string.replace("&", "\n")
     status = "200 OK"
